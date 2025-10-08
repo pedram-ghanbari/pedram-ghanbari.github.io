@@ -11,16 +11,7 @@ body {
     counter-reset: chapternum
 }
 
-.container {
-    width: 210mm;
-    display: block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 30px;
-    background: #fff;
-    position: relative;
-}
-
+ 
 .en-font {
     font-family: 'Calibri';
 }
