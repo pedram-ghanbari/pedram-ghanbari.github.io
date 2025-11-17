@@ -90,15 +90,7 @@ h2.job-desc {
     clear: both;
     padding-top: 15px
 }
-
-.property-item_head label {
-    font-weight: 700;
-    color: #147cbe;
-    position: relative;
-    text-align: center;
-    border-bottom: 3px solid;
-    min-width: 100px
-}
+ 
 
 .property-item_body {
     padding: 10px 0 5px;
@@ -205,9 +197,7 @@ div.item-row li>span label:first-child {
     margin-left: 5px;
 }
 
-.item-row.w0 li>span {
-    width: auto
-}
+ 
 
 .item-row.w1 li>span {
     width: 100%
