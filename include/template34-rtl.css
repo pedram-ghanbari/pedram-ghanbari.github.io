@@ -144,9 +144,8 @@
    width: 601px;
    display: block;
    float: right;
-   margin-right: 0px;
-   height: auto;
-   padding-bottom: 0px;
+   margin-right: 0;
+   padding-bottom: 0;
    height: 200px;
    padding-left: 10px;
    position: relative;
@@ -209,7 +208,7 @@
    color: #033b52;
    text-align: right;
    border-bottom: none;
-   padding-top: 0px;
+   padding-top: 0;
    position: relative;
    float: right;
    right: -70px;
@@ -223,7 +222,7 @@
    text-align: center;
    width: 68%;
    clear: both;
-   padding-top: 0px;
+   padding-top:0;
    float: right;
    position: relative;
    padding-right: 18px;
@@ -258,7 +257,7 @@
    background: #033b52;
    right: -15px;
    top: -2px;
-   margin: 0px;
+   margin:0;
    float: right;
    border-radius: 5px;
    transform: rotate(45deg);
@@ -331,7 +330,7 @@
  div.item-row li label.grade i {
    width: 50px;
    height: 8px;
-   margin: 0px 0px;
+   margin:0;
    box-sizing: border-box;
    display: block;
    float: right;
@@ -510,7 +509,7 @@
   
 
  ul.history p.description {
-   max-width: 100%;
+   max-width: 98%;
    font-size: 12px;
  }
 
@@ -544,7 +543,7 @@
  }
 
  .social__list div.item-row li>span label:first-child {
-   padding-right: 0px !important;
+   padding-right:0 !important;
  }
 
  .property-item.language__list li {
@@ -571,7 +570,7 @@
 
  body.no-photo div.user-image {
    visibility: hidden;
-   height: 0px !important;
+   height:0 !important;
  }
 
  body.no-photo .user-base {
