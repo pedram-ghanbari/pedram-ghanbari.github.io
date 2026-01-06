@@ -16,1138 +16,1135 @@
     <link href="./include/fonts.css" rel="stylesheet">
     <link href="./include/defaultresume-rtl.css" rel="stylesheet">
     <link href="./include/template34-rtl.css" rel="stylesheet">
- 
+
 </head>
 
 <body>
-    <style>
-        body,
-        html {
-            -ms-text-size-adjust: none;
-            -moz-text-size-adjust: none;
-           
-            -webkit-text-size-adjust: none;
-        }
-    </style>
+<style>
+    body,
+    html {
+        -ms-text-size-adjust: none;
+        -moz-text-size-adjust: none;
 
-    <style>
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        button {
-            font-family: IRANSans, serif;
-        }
+        -webkit-text-size-adjust: none;
+    }
+</style>
 
-
-
-        .template-modal_header h3 {
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
-            margin-bottom: 0;
-            padding-bottom: 15px;
-            border-bottom: 2px solid;
-        }
-
-        .template-modal_header p {
-            font-size: 14px;
-            color: #dadada;
-            text-align: center;
-            margin-top: 5px;
-        }
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    button {
+        font-family: IRANSans, serif;
+    }
 
 
+    .template-modal_header h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+        border-bottom: 2px solid;
+    }
 
-        .template-items h3 {
-            font-size: 16px;
-            font-weight: normal;
-            text-align: center;
-            margin-top: 20px;
-        }
+    .template-modal_header p {
+        font-size: 14px;
+        color: #dadada;
+        text-align: center;
+        margin-top: 5px;
+    }
 
 
+    .template-items h3 {
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 20px;
+    }
 
-        .template-items a:hover {
-            background: #f6433d;
-        }
+
+    .template-items a:hover {
+        background: #f6433d;
+    }
 
 
+    .image-container span {
+        position: absolute;
+        top: 0;
+        display: inline-flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
 
-        .image-container span {
-            position: absolute;
-            top: 0;
-            display: inline-flex;
-            height: 100%;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff;
-        }
+    .image-container img {
+        width: 100%;
+        height: 100% !important;
+        transition: all 150ms;
+        border-radius: 15px;
+        object-fit: cover;
+    }
 
+
+    a[uk-slider-item] {
+        top: 38%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: #03A9F4;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 150ms;
+        visibility: visible !important;
+    }
+
+    a[uk-slider-item]:hover {
+        background-color: #0090d2;
+    }
+
+    a[uk-slider-item="next"] {
+        left: calc(37% - 2px);
+    }
+
+    a[uk-slider-item="previous"] {
+        right: calc(37% - 2px);
+        left: initial;
+    }
+
+
+    .template-item--img[src] + span {
+        display: none;
+    }
+
+    img[data-src][src*='data:image'] {
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    @media only screen and (max-width: 640px) {
         .image-container img {
-            width: 100%;
-            height: 100% !important;
-            transition: all 150ms;
-            border-radius: 15px;
-            object-fit: cover;
-        }
-
-
-
-        a[uk-slider-item] {
-            top: 38%;
-            left: 50%;
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            background-color: #03A9F4;
-            border-radius: 4px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 150ms;
-            visibility: visible !important;
-        }
-
-        a[uk-slider-item]:hover {
-            background-color: #0090d2;
-        }
-
-        a[uk-slider-item="next"] {
-            left: calc(37% - 2px);
+            filter: none;
         }
 
         a[uk-slider-item="previous"] {
-            right: calc(37% - 2px);
-            left: initial;
+            right: 8%;
+        }
+
+        a[uk-slider-item="next"] {
+            left: 8%;
         }
 
 
+    }
 
-        .template-item--img[src]+span {
-            display: none;
+
+    @media only screen and (max-width: 376px) {
+        a[uk-slider-item] {
+            top: 30%;
+            width: 45px;
+            height: 45px;
         }
-
-        img[data-src][src*='data:image'] {
-            background: rgba(0, 0, 0, 0.1);
-        }
-
-        @media only screen and (max-width: 640px) {
-            .image-container img {
-                filter: none;
-            }
-
-            a[uk-slider-item="previous"] {
-                right: 8%;
-            }
-
-            a[uk-slider-item="next"] {
-                left: 8%;
-            }
-
-
-        }
-
-
-
-        @media only screen and (max-width: 376px) {
-            a[uk-slider-item] {
-                top: 30%;
-                width: 45px;
-                height: 45px;
-            }
-        }
-    </style>
-    <div class="container">
-        <div class="resume-border">
-            <div class="contact-info">
-                <div class="user-base">
-                    <div class="user-image"
-                        >
-                    </div>
+    }
+</style>
+<div class="container">
+    <div class="resume-border">
+        <div class="contact-info">
+            <div class="user-base">
+                <div class="user-image"
+                >
                 </div>
-                <div class="basic-contact-info">
-                    <h1 class="name-detail">
-                        صادق قنبری
-                    </h1>
-                    <div class="contact-detail">
-                        <div class="infoo info" data-section="Contact">
-                            <div class="infoo-head">
-                                <label>اطلاعات تماس</label>
-                            </div>
-                            <div class="contact-item contact__email"> <span class="">
+            </div>
+            <div class="basic-contact-info">
+                <h1 class="name-detail">
+                    صادق قنبری
+                </h1>
+                <div class="contact-detail">
+                    <div class="infoo info" data-section="Contact">
+                        <div class="infoo-head">
+                            <label>اطلاعات تماس</label>
+                        </div>
+                        <div class="contact-item contact__email"> <span class="">
                                     <i class="fa fa-envelope"></i>
                                 </span>
-                                <span class="">ایمیل:</span>
-                                <span>
+                            <span class="">ایمیل:</span>
+                            <span>
                                     <a href="mailto:sadeghghanbari.dev@gmail.com">sadeghghanbari.dev@gmail.com</a>
                                 </span>
-                            </div>
-                            <div class="contact-item contact__mobile">
+                        </div>
+                        <div class="contact-item contact__mobile">
                                 <span class="">
                                     <i class="fa fa-mobile-alt"></i>
                                 </span>
-                                <span class="">موبایل:</span>
-                                <span style="unicode-bidi:embed" dir="ltr">(+۹۸)۹۱۳۹۲۰۳۹۷۹</span>
-                            </div>
-                            <div class="contact-item contact__city">
+                            <span class="">موبایل:</span>
+                            <span style="unicode-bidi:embed" dir="ltr">(+۹۸)۹۱۳۹۲۰۳۹۷۹</span>
+                        </div>
+                        <div class="contact-item contact__city">
                                 <span class="">
                                     <i class="fas fa-map-marker"></i>
                                 </span>
-                                <span class="">آدرس:</span> <span>اصفهان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="title-detail">
-                        مهندس برنامه نویس
-                    </div>
-                    <div class="personal-detail">
-                        <div class="other-infos not-drag">
-                            <div class="basic__birthday">
-                                <span>متولد:</span>
-                                <span>۱۳۷۰/۱۱/۱۱</span>
-                            </div>
-                            <div class="basic__marital">
-                                <span>وضعیت تأهل:</span>
-                                <span>متأهل</span>
-                            </div>
-                            <div class="basic__military">
-                                <span>وضعیت سربازی:</span>
-                                <span>پایان خدمت</span>
-                            </div>
+                            <span class="">آدرس:</span> <span>اصفهان</span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row flex">
-                <div class="">
-                    <div class="property-item basic__about" data-section="About">
-                        <div class="property-item_head">
-
-                            <label>خلاصه رزومه</label>
-                        </div>
-                        <div class="property-item_body">
-                            <p class="about-us">
-                                مهندس برنامه‌نویس با تجربه و مهارت‌های برجسته در طراحی و پیاده‌سازی نرم‌افزارهای کاربردی و سیستم‌های پیچیده.<br>
-                                توانایی کدنویسی به زبان‌های: <strong>PHP</strong>، <strong>Go (Golang)</strong>، <strong>JavaScript</strong> و توانمند در حل مسائل چالش‌برانگیز با رویکرد نوآورانه.<br>
-                                دارای سابقه کاری با سیستم‌های <strong>CS-Cart</strong> و <strong>WordPress</strong>.<br>
-                                نمونه‌کار برجسته: طراحی و پیاده‌سازی <strong>CRM سازمانی</strong> با زبان <strong>Go</strong>.<br>
-                                تجربه‌ی گسترده در توسعه پروژه‌های <strong>Laravel</strong> و پیاده‌سازی معماری‌های مقیاس‌پذیر و قابل نگهداری.<br>
-                                فعال در حوزه <strong>امنیت وب</strong>، از جمله شناسایی و رفع آسیب‌پذیری‌های رایج مانند <strong>SQL Injection</strong>، <strong>XSS</strong>، <strong>CSRF</strong> و سایر تهدیدات امنیتی؛ همچنین مشارکت در برنامه‌های <strong>Bug Bounty</strong> برای ارتقای سطح امنیت نرم‌افزارهای تحت وب.<br>
-                                دارای توانایی‌های قوی در <strong>کار تیمی</strong>، <strong>ارتباط مؤثر</strong> و <strong>مدیریت پروژه</strong>.<br>
-                                تمامی پروژه‌ها با رعایت اصول کیفیت، به‌موقع و متناسب با نیازهای کسب‌وکار تحویل داده می‌شوند.<br>
-                                همیشه در تلاش برای یادگیری مداوم و به‌روزرسانی دانش در حوزه‌های نوین فناوری اطلاعات.        </p>
-                        </div>
-                    </div>
-                    <div class="property-item experience__list" data-section="Experience">
-                        <div class="property-item_head">
-
-                            <label>
-                                سوابق شغلی
-                            </label>
-                        </div>
-                        <div class="property-item_body">
-                            <ul class="history multi-line">
-                                <li class="experience">
-                                    <h2 class="subtitle">توسعه و طراح سایت</h2>
-                                    <h3 class="subtitle ">
-                                        شرکت فراسان
-                                    </h3>
-                                    <h3 class="subtitle full-address">اصفهان</h3>
-                                    <label class="date">۱۳۹۵ - ۱۳۹۶</label>
-                                    <label class="exp-desc-title">وظایف و دستاوردها</label>
-                                    <ul class="exp-desc">
-                                        <li>برنامه نویسی جوملا</li>
-                                        <li>طراحی سایت ورد پرس</li>
-                                    </ul>
-                                </li>
-                                <li class="4567779 has-date">
-                                    <h2 class="subtitle">توسعه نرم‌افزار</h2>
-                                    <h3 class="subtitle ">
-                                        شرکت نیک سپهر زاینده رود
-                                    </h3>
-                                    <h3 class="subtitle full-address">اصفهان</h3>
-                                    <label class="date">مهر ۱۳۹۳ - مهر ۱۳۹۶</label>
-                                    <label class="exp-desc-title">وظایف و دستاوردها</label>
-                                    <ul class="exp-desc">
-                                        <li> کانفیگ سرور</li>
-                                        <li>آشنایی با امنیت سرور های لینوکس</li>
-                                        <li>الپیک یک</li>
-                                        <li>الپیک دو</li>
-                                        <li>whmcs و برنامه نویسی آن </li>
-                                        <li> تجربه بیشتر در لاراول</li>
-                                    </ul>
-                                </li>
-                                <li class="4567780 has-date">
-                                    <h2 class="subtitle">کارشناس توسعه</h2>
-                                    <h3 class="subtitle ">
-                                        گروه توسعه سرمایه گذاری انتخاب
-                                    </h3>
-                                    <h3 class="subtitle full-address">اصفهان</h3>
-                                    <label class="date"> ۱۳۹۶</label>
-                                    <label class="exp-desc-title">وظایف و دستاوردها</label>
-                                    <ul class="exp-desc">
-                                        <li>کار با وردپرس</li>
-                                        <li>ساخت قالبهای ورد پرس اختصاصی</li>
-                                        <li>برنامه نویسی افزونه های ورد پرس</li>
-                                        <li>کار با سی اس کارت</li>
-                                        <li>برنامه نویسی سی اس کارت</li>
-                                        <li>برنامه نویسی لاراول</li>
-                                        <li>برنامه نویسی گو لنگ</li>
-                                    </ul>
-                                </li>
-                                <li class="4567781 has-date">
-                                    <h2 class="subtitle">پستیبان و برنامه نویس</h2>
-                                    <h3 class="subtitle ">
-                                        برنامه نویس وب سایت کریپتون
-                                    </h3>
-                                    <h3 class="subtitle full-address">تهران</h3>
-                                    <label class="date"> ۱۳۹۸ </label>
-                                    <label class="exp-desc-title">وظایف و دستاوردها</label>
-                                    <ul class="exp-desc">
-                                        <li>برنامه نویس وبسایت کریپتون</li>
-                                        <li>ساخت افزونه برای نمایش محاصبه و ارز های دیجیتال (تمامی امکانات سایت ارز
-                                            دیجیتال برای این سایت طراحی گردید)</li>
-                                        <li>کار با سوکت برا نمایش لحظه ای قیمت رمز ارزها</li>
-                                        <li>ساخت ماشین حساب محاصبه رمز ارزها</li>
-                                    </ul>
-                                </li>
-                                <li class="4567782 has-date">
-                                    <h2 class="subtitle">برنامه‌نویس بک‌اند (Golang)</h2>
-                                    <h3 class="subtitle">CRM سازمانی</h3>
-                                    <h3 class="subtitle full-address">اصفهان</h3>
-                                    <label class="date">۱۴۰۴</label> <label class="exp-desc-title">وظایف و
-                                        دستاوردها</label>
-                                    <ul class="exp-desc">
-                                        <li>طراحی و پیاده‌سازی بک‌اند سیستم CRM داخلی شرکت مان‌یسا با زبان Go برای مصرف
-                                            درون‌سازمانی.</li>
-                                        <li>معماری‌سازی پروژه با ساختار ماژولار (repository → service → handler) و
-                                            پیاده‌سازی الگوهای طراحی جهت افزایش خوانایی و نگهداری‌پذیری کد.</li>
-                                        <li>پیاده‌سازی APIهای RESTful با استفاده از فریم‌ورک Gin و مدیریت مسیرها،
-                                            middlewareها و احراز هویت.</li>
-                                        <li>طراحی و پیاده‌سازی احراز هویت مبتنی بر JWT و ذخیره و مدیریت توکن‌ها در
-                                            Redis.</li>
-                                        <li>پیاده‌سازی ذخیره‌سازی و مدیریت داده‌ها با PostgreSQL، طراحی اسکیمای دیتابیس
-                                            و استفاده از الگوهای Query Builder برای ساخت کوئری‌های پیچیده.</li>
-                                        <li>کار با Goroutineها و Channelها برای پردازش‌های غیرهمزمان و اجرای جاب‌های
-                                            پس‌زمینه (worker pool) به‌منظور افزایش کارایی و پاسخ‌دهی سیستم.</li>
-                                        <li>ایجاد و مدیریت سیستم اشتراک‌گذاری یادداشت‌ها (note_shares) و پیاده‌سازی منطق
-                                            دسترسی/visibility برای اشتراک‌دهی امن بین کاربران.</li>
-                                        <li>کانتِینریزه‌کردن سرویس‌ Docker با
-                                            docker-compose.</li>
-                                        <li> پیاده‌سازی لاگینگ و مدیریت خطاها.</li>
-                                        <li>کار روی بهینه‌سازی‌های مربوط به همزمانی، امنیت ورودی‌ها، و بهبود ساختار
-                                            پوشه‌ای پروژه برای قابل توسعه بودن در آینده.</li>
-                                    </ul> <label class="exp-desc-title">فناوری‌ها و ابزارها</label>
-                                    <ul class="exp-desc">
-                                        <li>Golang, Gin, golang-jwt/jwt</li>
-                                        <li>PostgreSQL, Redis</li>
-                                        <li>Docker, docker-compose</li>
-                                        <li>معماری repository/service/handler — BaseQueryBuilder برای کوئری‌های پیچیده
-                                        </li>
-                                        <li>Goroutines, Channels, Worker Pools</li>
-                                        <li>مفاهیم: REST API, JWT Auth, Concurrency, Error Handling, Unit/Integration
-                                            Testing</li>
-                                    </ul> <label class="exp-desc-title">دستاورد کلیدی</label>
-                                    <ul class="exp-desc">
-                                        <li>ایجاد یک CRM سازمانی قابل توسعه که نیازهای داخلی شرکت را پوشش داد و پایهٔ
-                                            مناسبی برای توسعهٔ آتی فراهم کرد.</li>
-                                    </ul>
-                                </li>
-                                <li class="4567782 has-date">
-                                    <h2 class="subtitle">برنامه نویس cscart</h2>
-                                    <h3 class="subtitle ">
-                                        سلوری
-                                    </h3>
-                                    <h3 class="subtitle full-address">تهران</h3>
-                                    <label class="date"> ۱۴۰۰ </label>
-                                    <label class="exp-desc-title">وظایف و دستاوردها</label>
-                                    <ul class="exp-desc">
-                                        <li>برنامه نویس و پشتیبان سرور و وب سایت <a
-                                                href="https://my-sellory.com">my-sellory.com</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="4567853 has-date">
-                                    <h2 class="subtitle">برنامه نویس لاراول</h2>
-                                    <h3 class="subtitle ">
-                                        تولید نرم افزارهای پزشکی شرکت سیواک
-                                    </h3>
-                                    <h3 class="subtitle full-address">اصفهان ۱۳۹۶</h3>
-                                   
-                                  
-                                    <ul class="exp-desc">
-                                       
-                                    </ul>
-                                </li>
-                                <li class="4567853 has-date">
-                                    <h2 class="subtitle">برنامه نویس لاراول</h2>
-                                    <h3 class="subtitle ">
-                                        برنامه نویسی وب اپلیکیشن مانیسا
-                                    </h3>
-                                    <p class="project-link ">
-                                        لینک مرتبط: <a rel="nofollow noreferrer" href="https://moneysa.ir/"
-                                            target="_blank">moneysa.ir</a>
-                                    </p>
-                                    <h3 class="subtitle full-address">اصفهان</h3>
-                                    <label class="date">اکنون </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
+                <div class="title-detail">
+                    مهندس برنامه نویس
                 </div>
-                <div class="">
-                    <div class="property-item skill__list" data-section="Skill">
-                        <div class="property-item_head">
-                            <label>
-                                مهارت‌ها
-                            </label>
+                <div class="personal-detail">
+                    <div class="other-infos not-drag">
+                        <div class="basic__birthday">
+                            <span>متولد:</span>
+                            <span>۱۳۷۰/۱۱/۱۱</span>
                         </div>
-                        <div class="property-item_body">
-                            <div class="bar-progress item-row w0">
-                                <ul class="history">
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>برنامه‌نویسی وب </label>
-                                            
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>برنامه نویس PHP (دارای نمونه کار) </label>
-                                            
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>فریمورک لاراول (Laravel) (دارای نمونه کار)</label>
-                                          
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>برنامه نویس go-lang( دارای نمونه کار) </label>
-                                           
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>پایگاه داده MySQL </label>
-                                             
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>پایگاه داده PostgreSQL </label>   
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>cscart (دارای نمونه کار)</label>
-                                             
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>WordPress (دارای نمونه کار)</label>
-                                            
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>برنامه نویسی Frontend (دارای نمونه کار)</label>
-                                            
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>JavaScript (دارای نمونه کار)</label>
-                                             
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>React js ( دارای نمونه کار)</label>
-                                            
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            توانایی در آموزش دادن نرم افزارهای کامپیوتری دارای فن بیان قوی در
-                                            ارائه مطالب.
-                                             
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            توانایی مشاوره برای انجام کسب کارهای اینترنتی و راه‌اندازی استارت آپ های
-                                            موفق.
-                                            
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>توانایی تبلیغات اینترنتی برای شرکتها و سازمانها. </label>
-                                            
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>سئوی سایت و معرفی به سایت گوگل و بینگ. </label>
-                                            
-                                        </span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span>
-                                            <label>آشنای با اصول سئو طراحی قالب سایت بر حسب 
-                                                <br>
-                                                استانداردهای سئو </label>
-                                             
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                           
+                        <div class="basic__marital">
+                            <span>وضعیت تأهل:</span>
+                            <span>متأهل</span>
                         </div>
-                    </div>
-                    <div class="property-item language__list" data-section="Language">
-                        <div class="property-item_head">
-
-                            <label>
-                                زبان
-                            </label>
-                        </div>
-                        <div class="property-item_body">
-                            <div class="item-row w4">
-                                <ul class="history">
-                                    <li class="language-presentation-stars ">
-                                        <h2 class="subtitle language-item ">
-                                            انگلیسی
-                                        </h2> <span>
-                                            <label>مهارت خواندن</label>
-                                            <label class="grade"> <i class="tik"><span
-                                                        class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i><span class="far fa-star"></span></i> </label>
-                                        </span>
-                                        <span>
-                                            <label>مهارت نوشتن</label>
-                                            <label class="grade"> <i class="tik"><span
-                                                        class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i><span class="far fa-star"></span></i>
-                                                <i><span class="far fa-star"></span></i> </label>
-                                        </span>
-                                        <span> <label>مهارت گفتاری</label>
-                                            <label class="grade"> <i class="tik"><span
-                                                        class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i><span class="far fa-star"></span></i>
-                                                <i><span class="far fa-star"></span></i> </label>
-                                        </span>
-                                        <span> <label>مهارت شنیداری</label>
-                                            <label class="grade"> <i class="tik"><span
-                                                        class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i class="tik"><span class="far fa-star"></span></i>
-                                                <i><span class="far fa-star"></span></i> </label>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="property-item custom__list " data-section="Teaching">
-                        <div class="property-item_head">
-
-                            <label>
-                                سوابق تدریس
-                            </label>
-                        </div>
-                        <div class="property-item_body">
-                            <ul class="history one-line">
-                                <li class="Teaching custom-list-item ">
-                                    <h2 class="subtitle bidirectional ">
-                                        تدریس لاراول
-                                    </h2>
-                                    <h3 class="subtitle bidirectional ">
-                                        آموزشگاه مهرگان اصفهان
-                                    </h3>
-                                </li>
-                                <li class="Teaching custom-list-item ">
-                                    <h2 class="subtitle bidirectional ">
-                                        آموزش ورد پرس
-                                    </h2>
-                                    <h3 class="subtitle bidirectional ">
-                                        ‍آموزشگاه مهرگان اصفهان
-                                    </h3>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="property-item custom__list " data-section="Custom-8d8a0257-dfc9-40b2-9be7-83e048c483bc">
-                        <div class="property-item_head">
-
-                            <label>
-                                بخش دلخواه
-                            </label>
-                        </div>
-                        <div class="property-item_body">
-                            <ul class="history one-line">
-                                <li class="Custom custom-list-item ">
-                                    <h2 class="subtitle bidirectional ">
-                                        با تشکر از شما که زمانی را صرف خواندن توانایی های بنده کردید.
-                                    </h2>
-                                    <p class="description bidirectional ">بنده فردی دارای پشت کار قوی در انجام کارها و
-                                        حل مسائل می باشم. دارای اخلاقی خوب و صبر بسیار بالایی هستم. تمرکز بالا و هوش قوی
-                                        دارم و توان بسیار بالایی در مهندسی نرم‌افزار دارم. بنده روزانه یک ساعت زمان برای
-                                        کتابخانی می گذارم و نیم ساعت زمان برای روزنامه ومجله خوانی.</p>
-                                </li>
-                            </ul>
+                        <div class="basic__military">
+                            <span>وضعیت سربازی:</span>
+                            <span>پایان خدمت</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row flex">
+            <div class="">
+                <div class="property-item basic__about" data-section="About">
+                    <div class="property-item_head">
+
+                        <label>خلاصه رزومه</label>
+                    </div>
+                    <div class="property-item_body">
+                        <p class="about-us">
+                            مهندس برنامه‌نویس با تجربه و مهارت‌های برجسته در طراحی و پیاده‌سازی نرم‌افزارهای کاربردی و
+                            سیستم‌های پیچیده.<br>
+                            توانایی کدنویسی به زبان‌های: <strong>PHP</strong>، <strong>Go (Golang)</strong>، <strong>JavaScript</strong>
+                            و توانمند در حل مسائل چالش‌برانگیز با رویکرد نوآورانه.<br>
+                            دارای سابقه کاری با سیستم‌های <strong>CS-Cart</strong> و <strong>WordPress</strong>.<br>
+                            نمونه‌کار برجسته: طراحی و پیاده‌سازی <strong>CRM سازمانی</strong> با زبان
+                            <strong>Go</strong>.<br>
+                            تجربه‌ی گسترده در توسعه پروژه‌های <strong>Laravel</strong> و پیاده‌سازی معماری‌های
+                            مقیاس‌پذیر و قابل نگهداری.<br>
+                            آشنا به ابزارهای نظارت و رصد سلامت سیستم‌ها از جمله <strong>Grafana</strong> و
+                            <strong>Loki</strong> برای تجسم معیارها (metrics) و مدیریت لاگ‌های توزیع‌شده.<br>
+                            فعال در حوزه <strong>امنیت وب</strong>، از جمله شناسایی و رفع آسیب‌پذیری‌های رایج مانند
+                            <strong>SQL Injection</strong>، <strong>XSS</strong>، <strong>CSRF</strong> و سایر تهدیدات
+                            امنیتی؛ همچنین مشارکت در برنامه‌های <strong>Bug Bounty</strong> برای ارتقای سطح امنیت
+                            نرم‌افزارهای تحت وب.<br>
+                            دارای توانایی‌های قوی در <strong>کار تیمی</strong>، <strong>ارتباط مؤثر</strong> و <strong>مدیریت
+                            پروژه</strong>.<br>
+                            تمامی پروژه‌ها با رعایت اصول کیفیت، به‌موقع و متناسب با نیازهای کسب‌وکار تحویل داده می‌شوند.<br>
+                            همیشه در تلاش برای یادگیری مداوم و به‌روزرسانی دانش در حوزه‌های نوین فناوری اطلاعات.
+                        </p>
+                    </div>
+                </div>
+                <div class="property-item experience__list" data-section="Experience">
+                    <div class="property-item_head">
+
+                        <label>
+                            سوابق شغلی
+                        </label>
+                    </div>
+                    <div class="property-item_body">
+                        <ul class="history multi-line">
+                            <li class="experience">
+                                <h2 class="subtitle">توسعه و طراح سایت</h2>
+                                <h3 class="subtitle ">
+                                    شرکت فراسان
+                                </h3>
+                                <h3 class="subtitle full-address">اصفهان</h3>
+                                <label class="date">۱۳۹۵ - ۱۳۹۶</label>
+                                <label class="exp-desc-title">وظایف و دستاوردها</label>
+                                <ul class="exp-desc">
+                                    <li>برنامه نویسی جوملا</li>
+                                    <li>طراحی سایت ورد پرس</li>
+                                </ul>
+                            </li>
+                            <li class="4567779 has-date">
+                                <h2 class="subtitle">توسعه نرم‌افزار</h2>
+                                <h3 class="subtitle ">
+                                    شرکت نیک سپهر زاینده رود
+                                </h3>
+                                <h3 class="subtitle full-address">اصفهان</h3>
+                                <label class="date">مهر ۱۳۹۳ - مهر ۱۳۹۶</label>
+                                <label class="exp-desc-title">وظایف و دستاوردها</label>
+                                <ul class="exp-desc">
+                                    <li> کانفیگ سرور</li>
+                                    <li>آشنایی با امنیت سرور های لینوکس</li>
+                                    <li>الپیک یک</li>
+                                    <li>الپیک دو</li>
+                                    <li>whmcs و برنامه نویسی آن</li>
+                                    <li> تجربه بیشتر در لاراول</li>
+                                </ul>
+                            </li>
+                            <li class="4567780 has-date">
+                                <h2 class="subtitle">کارشناس توسعه</h2>
+                                <h3 class="subtitle ">
+                                    گروه توسعه سرمایه گذاری انتخاب
+                                </h3>
+                                <h3 class="subtitle full-address">اصفهان</h3>
+                                <label class="date"> ۱۳۹۶</label>
+                                <label class="exp-desc-title">وظایف و دستاوردها</label>
+                                <ul class="exp-desc">
+                                    <li>کار با وردپرس</li>
+                                    <li>ساخت قالبهای ورد پرس اختصاصی</li>
+                                    <li>برنامه نویسی افزونه های ورد پرس</li>
+                                    <li>کار با سی اس کارت</li>
+                                    <li>برنامه نویسی سی اس کارت</li>
+                                    <li>برنامه نویسی لاراول</li>
+                                    <li>برنامه نویسی گو لنگ</li>
+                                </ul>
+                            </li>
+                            <li class="4567781 has-date">
+                                <h2 class="subtitle">پستیبان و برنامه نویس</h2>
+                                <h3 class="subtitle ">
+                                    برنامه نویس وب سایت کریپتون
+                                </h3>
+                                <h3 class="subtitle full-address">تهران</h3>
+                                <label class="date"> ۱۳۹۸ </label>
+                                <label class="exp-desc-title">وظایف و دستاوردها</label>
+                                <ul class="exp-desc">
+                                    <li>برنامه نویس وبسایت کریپتون</li>
+                                    <li>ساخت افزونه برای نمایش محاصبه و ارز های دیجیتال (تمامی امکانات سایت ارز
+                                        دیجیتال برای این سایت طراحی گردید)
+                                    </li>
+                                    <li>کار با سوکت برا نمایش لحظه ای قیمت رمز ارزها</li>
+                                    <li>ساخت ماشین حساب محاصبه رمز ارزها</li>
+                                </ul>
+                            </li>
+                            <li class="4567782 has-date">
+                                <h2 class="subtitle">برنامه‌نویس بک‌اند (Golang)</h2>
+                                <h3 class="subtitle">CRM سازمانی</h3>
+                                <h3 class="subtitle full-address">اصفهان</h3>
+                                <label class="date">۱۴۰۴</label> <label class="exp-desc-title">وظایف و
+                                دستاوردها</label>
+                                <ul class="exp-desc">
+                                    <li>طراحی و پیاده‌سازی بک‌اند سیستم CRM داخلی شرکت مان‌یسا با زبان Go برای مصرف
+                                        درون‌سازمانی.
+                                    </li>
+                                    <li>معماری‌سازی پروژه با ساختار ماژولار (repository → service → handler) و
+                                        پیاده‌سازی الگوهای طراحی جهت افزایش خوانایی و نگهداری‌پذیری کد.
+                                    </li>
+                                    <li>پیاده‌سازی APIهای RESTful با استفاده از فریم‌ورک Gin و مدیریت مسیرها،
+                                        middlewareها و احراز هویت.
+                                    </li>
+                                    <li>طراحی و پیاده‌سازی احراز هویت مبتنی بر JWT و ذخیره و مدیریت توکن‌ها در
+                                        Redis.
+                                    </li>
+                                    <li>پیاده‌سازی ذخیره‌سازی و مدیریت داده‌ها با PostgreSQL، طراحی اسکیمای دیتابیس
+                                        و استفاده از الگوهای Query Builder برای ساخت کوئری‌های پیچیده.
+                                    </li>
+                                    <li>کار با Goroutineها و Channelها برای پردازش‌های غیرهمزمان و اجرای جاب‌های
+                                        پس‌زمینه (worker pool) به‌منظور افزایش کارایی و پاسخ‌دهی سیستم.
+                                    </li>
+                                    <li>ایجاد و مدیریت سیستم اشتراک‌گذاری یادداشت‌ها (note_shares) و پیاده‌سازی منطق
+                                        دسترسی/visibility برای اشتراک‌دهی امن بین کاربران.
+                                    </li>
+                                    <li>کانتِینریزه‌کردن سرویس‌ Docker با
+                                        docker-compose.
+                                    </li>
+                                    <li> پیاده‌سازی لاگینگ و مدیریت خطاها.</li>
+                                    <li>کار روی بهینه‌سازی‌های مربوط به همزمانی، امنیت ورودی‌ها، و بهبود ساختار
+                                        پوشه‌ای پروژه برای قابل توسعه بودن در آینده.
+                                    </li>
+                                </ul>
+                                <label class="exp-desc-title">فناوری‌ها و ابزارها</label>
+                                <ul class="exp-desc">
+                                    <li>Golang, Gin, golang-jwt/jwt</li>
+                                    <li>PostgreSQL, Redis</li>
+                                    <li>Docker, docker-compose</li>
+                                    <li>معماری repository/service/handler — BaseQueryBuilder برای کوئری‌های پیچیده
+                                    </li>
+                                    <li>Goroutines, Channels, Worker Pools</li>
+                                    <li>مفاهیم: REST API, JWT Auth, Concurrency, Error Handling, Unit/Integration
+                                        Testing
+                                    </li>
+                                </ul>
+                                <label class="exp-desc-title">دستاورد کلیدی</label>
+                                <ul class="exp-desc">
+                                    <li>ایجاد یک CRM سازمانی قابل توسعه که نیازهای داخلی شرکت را پوشش داد و پایهٔ
+                                        مناسبی برای توسعهٔ آتی فراهم کرد.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="4567782 has-date">
+                                <h2 class="subtitle">برنامه نویس cscart</h2>
+                                <h3 class="subtitle ">
+                                    سلوری
+                                </h3>
+                                <h3 class="subtitle full-address">تهران</h3>
+                                <label class="date"> ۱۴۰۰ </label>
+                                <label class="exp-desc-title">وظایف و دستاوردها</label>
+                                <ul class="exp-desc">
+                                    <li>برنامه نویس و پشتیبان سرور و وب سایت <a
+                                            href="https://my-sellory.com">my-sellory.com</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="4567853 has-date">
+                                <h2 class="subtitle">برنامه نویس لاراول</h2>
+                                <h3 class="subtitle ">
+                                    تولید نرم افزارهای پزشکی شرکت سیواک
+                                </h3>
+                                <h3 class="subtitle full-address">اصفهان ۱۳۹۶</h3>
+
+
+                                <ul class="exp-desc">
+
+                                </ul>
+                            </li>
+                            <li class="4567853 has-date">
+                                <h2 class="subtitle">برنامه نویس لاراول</h2>
+                                <h3 class="subtitle ">
+                                    برنامه نویسی وب اپلیکیشن مانیسا
+                                </h3>
+                                <p class="project-link ">
+                                    لینک مرتبط: <a rel="nofollow noreferrer" href="https://moneysa.ir/"
+                                                   target="_blank">moneysa.ir</a>
+                                </p>
+                                <h3 class="subtitle full-address">اصفهان</h3>
+                                <label class="date">اکنون </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="">
+                <div class="property-item skill__list" data-section="Skill">
+                    <div class="property-item_head">
+                        <label>
+                            مهارت‌ها
+                        </label>
+                    </div>
+                    <div class="property-item_body">
+                        <div class="bar-progress item-row w0">
+                            <ul class="history">
+                                <li class="skill-item">
+        <span>
+            <label>برنامه‌نویسی وب</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>برنامه‌نویس PHP (دارای نمونه کار)</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>فریمورک لاراول (Laravel) (دارای نمونه کار)</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>Go (Golang) — توسعه‌ی سرویس‌های backend و میکروسرویس‌ها (دارای نمونه کار)</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>فریمورک Gin برای توسعه‌ی APIهای سریع و کارآمد در Go</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>پایگاه داده MySQL</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>پایگاه داده PostgreSQL</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>CS-Cart (دارای نمونه کار)</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>WordPress (دارای نمونه کار)</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>برنامه‌نویسی Frontend (دارای نمونه کار)</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>JavaScript (دارای نمونه کار)</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>React.js (دارای نمونه کار)</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>کانتینری‌سازی برنامه‌ها با Docker و مدیریت محیط‌های چند‌سرویسی با Docker Compose</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>آشنایی با ابزارهای نظارت و تجسم داده: Grafana و Loki (برای رصد لاگ‌ها و معیارهای سیستم)</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>فعال در برنامه‌های Bug Bounty و شناسایی آسیب‌پذیری‌های امنیتی مانند SQL Injection، XSS و CSRF</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            توانایی در آموزش دادن نرم‌افزارهای کامپیوتری و دارای فن بیان قوی در ارائه مطالب.
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            توانایی مشاوره برای انجام کسب‌وکارهای اینترنتی و راه‌اندازی استارتاپ‌های موفق.
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>توانایی تبلیغات اینترنتی برای شرکت‌ها و سازمان‌ها</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>سئوی سایت و معرفی به موتورهای جستجوی گوگل و بینگ</label>
+        </span>
+                                </li>
+                                <li class="skill-item">
+        <span>
+            <label>آشنایی با اصول سئو و طراحی قالب سایت مطابق با استانداردهای سئو</label>
+        </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property-item language__list" data-section="Language">
+                    <div class="property-item_head">
+
+                        <label>
+                            زبان
+                        </label>
+                    </div>
+                    <div class="property-item_body">
+                        <div class="item-row w4">
+                            <ul class="history">
+                                <li class="language-presentation-stars ">
+                                    <h2 class="subtitle language-item ">
+                                        انگلیسی
+                                    </h2> <span>
+                                            <label>مهارت خواندن</label>
+                                            <label class="grade"> <i class="tik"><span
+                                                    class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i><span class="far fa-star"></span></i> </label>
+                                        </span>
+                                    <span>
+                                            <label>مهارت نوشتن</label>
+                                            <label class="grade"> <i class="tik"><span
+                                                    class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i><span class="far fa-star"></span></i>
+                                                <i><span class="far fa-star"></span></i> </label>
+                                        </span>
+                                    <span> <label>مهارت گفتاری</label>
+                                            <label class="grade"> <i class="tik"><span
+                                                    class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i><span class="far fa-star"></span></i>
+                                                <i><span class="far fa-star"></span></i> </label>
+                                        </span>
+                                    <span> <label>مهارت شنیداری</label>
+                                            <label class="grade"> <i class="tik"><span
+                                                    class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i class="tik"><span class="far fa-star"></span></i>
+                                                <i><span class="far fa-star"></span></i> </label>
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property-item custom__list " data-section="Teaching">
+                    <div class="property-item_head">
+
+                        <label>
+                            سوابق تدریس
+                        </label>
+                    </div>
+                    <div class="property-item_body">
+                        <ul class="history one-line">
+                            <li class="Teaching custom-list-item ">
+                                <h2 class="subtitle bidirectional ">
+                                    تدریس لاراول
+                                </h2>
+                                <h3 class="subtitle bidirectional ">
+                                    آموزشگاه مهرگان اصفهان
+                                </h3>
+                            </li>
+                            <li class="Teaching custom-list-item ">
+                                <h2 class="subtitle bidirectional ">
+                                    آموزش ورد پرس
+                                </h2>
+                                <h3 class="subtitle bidirectional ">
+                                    ‍آموزشگاه مهرگان اصفهان
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="property-item custom__list " data-section="Custom-8d8a0257-dfc9-40b2-9be7-83e048c483bc">
+                    <div class="property-item_head">
+
+                        <label>
+                            بخش دلخواه
+                        </label>
+                    </div>
+                    <div class="property-item_body">
+                        <ul class="history one-line">
+                            <li class="Custom custom-list-item ">
+                                <h2 class="subtitle bidirectional ">
+                                    با تشکر از شما که زمانی را صرف خواندن توانایی های بنده کردید.
+                                </h2>
+                                <p class="description bidirectional ">بنده فردی دارای پشت کار قوی در انجام کارها و
+                                    حل مسائل می باشم. دارای اخلاقی خوب و صبر بسیار بالایی هستم. تمرکز بالا و هوش قوی
+                                    دارم و توان بسیار بالایی در مهندسی نرم‌افزار دارم. بنده روزانه یک ساعت زمان برای
+                                    کتابخانی می گذارم و نیم ساعت زمان برای روزنامه ومجله خوانی.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <style>
-
-
-        .container {
-            box-shadow: 0 0 6px -2px #000;
-            margin: 50px auto;
-
-            min-height: 297mm;
-            position: relative;
-            font-family: IRANSans,serif;
-            line-height: 21px;
-            width: 300mm;
-            display: block;
-
-            box-sizing: border-box;
-            background: #ffffff;
-            border: 10px solid #212a33;
-            border-radius: 10px;
-        }
-
-
-
-        .personal-detail {
-            float: left;
-            display: inline-block;
-            font-size: 14px;
-        }
-
-
-
-        
-
-        span {
-            width: 100%;
-            display: inline;
-        }
-
-        
-
-        .contact-detail {
-            display: block;
-        }
-
-
-
-       
-
-        .property-item_head span {
-            display: inline;
-        }
-
-        div.contact-item span:first-child {
-            display: inline;
-        }
-
-
-        
-
-        .title-detail {
-            font-size: 15px;
-            float: right;
-            width: 45%;
-            margin-top: 5px;
-            color: #212a33;
-        }
-
-        .personal-detail {
-            float: right;
-            margin-top: 15px;
-            color: #757575;
-            width: 45%;
-        }
-
-
-
-
-
-        .basic-contact-info {  
-            float: right;
-              width: 70%;
-            display: block;
-        }
-
-        span {
-            width: 100%;
-            display: INLINE;
-        }
-
-        ul.history.multi-line li {
-            width: 100%;
-        }
-
-        .contact-detail {
-            display: block;
-            border-right: 2px dotted #aeb5b7;
-            /*float: left;*/
-            padding-right: 15px;
-            margin-top: 15px;
-            width: 50%;
-        }
-
-
-
-        .resume-border {
-            height: 100%;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            display: block;
-
-        }
-
-        .user-image {
-            border-radius: 50%;
-            background: #a5a52a;
-            position: fixed;
-            bottom: 50px;
-            right: 5px;
-            border: 5px solid;
-        }
-
-        .property-item_head span {
-            display: inline;
-        }
-
-        div.contact-item span:first-child {
-            display: inline;
-        }
-
-       
-
-        .infoo.info {
-            font-size: 14px;
-            color: #757575;
-            margin-bottom: 15px;
-        }
-
-
-
-
-
-        .property-item_head {
-            /* margin-top: 30px; */
-            margin-bottom: 10px;
-        }
-
-       
-
-        .property-item_head {
-            text-align: center;
-            width: 85%;
-            clear: both;
-            padding-top: 0;
-            /*float: right;*/
-            position: relative;
-            padding-right: 18px;
-            right: 60px;
-        }
-
-
-
-        .property-item_head:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            border-radius: 5px;
-            height: 2px;
-            background: #212a33;
-            right: -20px;
-            top: 15px;
-            z-index: 0;
-        }
-
-        .property-item_head span {
-            color: #18252d;
-        }
-
-        .property-item_head span:after {
-            content: '';
-            position: absolute;
-            height: 35px;
-            width: 35px;
-            background: #212a33;
-            right: -15px;
-            top: -2px;
-            margin: 0;
-            /*float: right;*/
-            border-radius: 5px;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            z-index: 2;
-        }
-
-        .property-item_head span {
-            /*float: right;*/
-            text-align: center;
-            width: 25px;
-            position: relative;
-            top: 1px;
-        }
-
-        .property-item_body>*:first-child {
-            margin: 0;
-            font-size: 14px;
-            padding: 0 5px;
-            /*float: right;*/
-        }
-
-        .user-image:before {
-            position: absolute;
-            width: 110%;
-            height: 110%;
-            background: transparent;
-            z-index: 5;
-            right: -17px;
-            border: 10px solid #2a2a2a;
-            border-radius: 50%;
-            top: -18px;
-        }
-
-        h2.subtitle.language-item~span label:first-child {
-            width: 100%;
-            color: #18252d;
-            height: auto;
-            font-size: 14px;
-        }
-
-        .user-base {
-            float: right;
-            width: 150px;
-            height: 150px;
-            border-radius: 0 0 0 75px;
-            border: 6px solid #212a33;
-            position: relative;
-            background: #212a33;
-            z-index: 2;
-        }
-
-        .property-item.social__list ul.history li span label:first-child {
-            font-size: 15px;
-            color: #212a33;
-            background: none;
-        }
-
-        .property-item_head span {
-            position: relative;
-            right: 50%;
-            z-index: 1;
-            font-size: 20px;
-            color: #212a33;
-            top: 2px;
-        }
-
-        div.item-row li>span label {
-            height: 100%;
-            font-size: 14px;
-            display: block;
-            /*float: right;*/
-        }
-
-        div.item-row li label.grade i.tik {
-            background: #212a33;
-        }
-
-        div.item-row li label.grade i {
-            width: 50px;
-            height: 8px;
-            margin: 0 0;
-            box-sizing: border-box;
-            display: block;
-            /*float: right;*/
-            border-radius: 0;
-        }
-
-        .item-row.w0 li>span {
-            width: 100%;
-        }
-
-        .bar-progress.item-row.w0 ul.history span {
-            position: relative;
-        }
-
-        div.item-row li>span label:first-child {
-            /*float: right;*/
-            color: #18252d;
-            background: none;
-            display: block;
-            border-radius: 2px;
-            padding: 0;
-            margin-left: 5px;
-        }
-
-        .item-row.w0 li>span {
-            height: auto;
-        }
-
-       
-
-        .basic__birthday {
-            width: 100%;
-            /*float: right;*/
-        }
-
-        .basic__marital {
-            width: 100%;
-            /*float: right;*/
-        }
-
-        .basic__military {
-            width: 100%;
-            /*float: right;*/
-        }
-
-        .property-item_head {
-            border-bottom: none;
-        }
-
-        .property-item_head span i {
-            z-index: 10;
-            position: absolute;
-            color: #ffffff;
-            right: -10px;
-            top: 5px;
-            width: 25px;
-        }
-
-        .item-row.w4 ul.history li {
-            margin-bottom: 25px;
-        }
-
-        .bar-progress.item-row.w0 ul.history span:before {
-            content: '●';
-            width: 14px;
-            height: 25px;
-            color: #212a33;
-            /*float: right;*/
-            font-family: emoji;
-            font-weight: 800;
-            margin-top: 0;
-        }
-
-        small {
-            display: block;
-        }
-
-        .basic__birthday:after {
-            content: '';
-            position: absolute;
-            color: aqua;
-            width: 50px;
-            height: 50px;
-        }
-
-      
-
-       
-
-        .other-infos.not-drag {
-            display: block;
-            height: 50px;
-            /*float: right;*/
-        }
-
-        .row {
-            display: flex;
-            width: 100%;
-        }
-        .contact-info:after {
-            content: '';
-            height: 120px;
-            width: 104px;
-            background: #ffffff;
-            position: absolute;
-            top: 60px;
-            right: 74px;
-            z-index: 1;
-        }
-
-        ul.history h2.subtitle {
-            font-size: 14px;
-            margin-bottom: 5px;
-            margin-top: 5px;
-            width: 100%;
-        }
-
-        ul.history h3.subtitle {
-            font-size: 15px;
-            width: 100%;
-        }
-
-        .property-item.social__list ul.history li span label:last-child {
-            font-size: 12px;
-        }
-
-        ul.history label.date {
-            font-size: 14px;
-            color: #5E5D5F;
-        }
-
-        label.exp-desc-title {
-            font-size: 14px;
-            margin-bottom: 4px;
-        }
-
-        ul.exp-desc li {
-            font-size: 14px;
-            margin-bottom: 0;
-        }
-
-        h3.subtitle label {
-            font-size: 14px;
-        }
-
-        p.project-link {
-            font-size: 12px;
-        }
-
-        .about-us {
-            font-size: 12px;
-        }
-
-        ul.list-item li {
-            margin-bottom: 5px;
-        }
-
-        .ui-sortable-handle:hover .property-item_head label {
-            background: #eeeeee;
-        }
-
-        .ui-sortable-handle:hover .property-item_head::before {
-            background: #eeeeee;
-        }
-
-        .contact-info {
-            height: 170px;
-            position: relative;
-            background: #ffffff;
-        }
-
-        .contact-info:before {
-            background: #fff;
-            content: '';
-            height: 38px;
-            width: 100%;
-            left: 0;
-            bottom: -1px;
-            position: absolute;
-            top: auto;
-            border-radius: 0 115px 0 0;
-        }
-
-        ul.history p.description {
-            max-width: 100%;
-            font-size: 16px;
-        }
-        ul.list-item li:last-child {
-            margin-bottom: 10px !important;
-        }
-     
-        ul.list-item li p {
-            border-right: 0;
-        }
-
-        li.custom-list-item {
-            min-height: 10px !important;
-        }
-
-        .social__list ul.history li {
-            width: 100%;
-        }
-
-        .social__list div.item-row li>span label:first-child {
-            padding-right: 0 !important;
-        }
-
-        .property-item.language__list li {
-            width: 100%;
-        }
-
-        .language-presentation-descriptive h2.subtitle.language-item~span label:first-child,
-        .language-presentation-grades h2.subtitle.language-item~span label:first-child {
-            font-size: 14px;
-            /*float: right;*/
-            width: auto !important;
-        }
-
-        .language-presentation-descriptive h2.subtitle.language-item~span label:last-child,
-        .language-presentation-grades h2.subtitle.language-item~span label:last-child {
-            font-size: 14px;
-            float: left;
-            font-weight: bold;
-        }
-
-        li.language-presentation-stars.overall label {
-            display: block;
-        }
-
-        body.no-photo div.user-image {
-            visibility: hidden;
-            height: 0 !important;
-        }
-
-        body.no-photo .user-base {
-            width: 0;
-            border: 0;
-        }
-
-        body.no-photo .basic-contact-info {
-            width: 100%;
-            border-bottom: 1px solid;
-            height: 175px;
-        }
-
-        body.no-photo .contact-info:before {
-            border-radius: 0 !important;
-        }
-
-        body.no-photo .contact-info:after {
-            display: none;
-        }
-
-        body.no-photo .contact-detail {
-            width: 340px;
-        }
-
-       
-    </style>
+</div>
+<style>
+
+
+    .container {
+        box-shadow: 0 0 6px -2px #000;
+        margin: 50px auto;
+
+        min-height: 297mm;
+        position: relative;
+        font-family: IRANSans, serif;
+        line-height: 21px;
+        width: 350mm;
+        display: block;
+
+        box-sizing: border-box;
+        background: #ffffff;
+        border: 10px solid #212a33;
+        border-radius: 10px;
+    }
+
+
+    .personal-detail {
+        float: left;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+
+    span {
+        width: 100%;
+        display: inline;
+    }
+
+
+    .contact-detail {
+        display: block;
+    }
+
+
+    .property-item_head span {
+        display: inline;
+    }
+
+    div.contact-item span:first-child {
+        display: inline;
+    }
+
+
+    .title-detail {
+        font-size: 15px;
+        float: right;
+        width: 45%;
+        margin-top: 5px;
+        color: #212a33;
+    }
+
+    .personal-detail {
+        float: right;
+        margin-top: 15px;
+        color: #757575;
+        width: 45%;
+    }
+
+
+    .basic-contact-info {
+        float: right;
+        width: 70%;
+        display: block;
+    }
+
+    span {
+        width: 100%;
+        display: INLINE;
+    }
+
+    ul.history.multi-line li {
+        width: 100%;
+    }
+
+    .contact-detail {
+        display: block;
+        border-right: 2px dotted #aeb5b7;
+        /*float: left;*/
+        padding-right: 15px;
+        margin-top: 15px;
+        width: 50%;
+    }
+
+
+    .resume-border {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+
+    }
+
+    .user-image {
+        border-radius: 50%;
+        background: #a5a52a;
+        position: fixed;
+        bottom: 50px;
+        right: 5px;
+        border: 5px solid;
+    }
+
+    .property-item_head span {
+        display: inline;
+    }
+
+    div.contact-item span:first-child {
+        display: inline;
+    }
+
+
+    .infoo.info {
+        font-size: 14px;
+        color: #757575;
+        margin-bottom: 15px;
+    }
+
+
+    .property-item_head {
+        /* margin-top: 30px; */
+        margin-bottom: 10px;
+    }
+
+
+    .property-item_head {
+        text-align: center;
+        width: 85%;
+        clear: both;
+        padding-top: 0;
+        /*float: right;*/
+        position: relative;
+        padding-right: 18px;
+        right: 60px;
+    }
+
+
+    .property-item_head:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-radius: 5px;
+        height: 2px;
+        background: #212a33;
+        right: -20px;
+        top: 15px;
+        z-index: 0;
+    }
+
+    .property-item_head span {
+        color: #18252d;
+    }
+
+    .property-item_head span:after {
+        content: '';
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        background: #212a33;
+        right: -15px;
+        top: -2px;
+        margin: 0;
+        /*float: right;*/
+        border-radius: 5px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        z-index: 2;
+    }
+
+    .property-item_head span {
+        /*float: right;*/
+        text-align: center;
+        width: 25px;
+        position: relative;
+        top: 1px;
+    }
+
+    .property-item_body > *:first-child {
+        margin: 0;
+        font-size: 14px;
+        padding: 0 5px;
+        /*float: right;*/
+    }
+
+    .user-image:before {
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        background: transparent;
+        z-index: 5;
+        right: -17px;
+        border: 10px solid #2a2a2a;
+        border-radius: 50%;
+        top: -18px;
+    }
+
+    h2.subtitle.language-item ~ span label:first-child {
+        width: 100%;
+        color: #18252d;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .user-base {
+        float: right;
+        width: 150px;
+        height: 150px;
+        border-radius: 0 0 0 75px;
+        border: 6px solid #212a33;
+        position: relative;
+        background: #212a33;
+        z-index: 2;
+    }
+
+    .property-item.social__list ul.history li span label:first-child {
+        font-size: 15px;
+        color: #212a33;
+        background: none;
+    }
+
+    .property-item_head span {
+        position: relative;
+        right: 50%;
+        z-index: 1;
+        font-size: 20px;
+        color: #212a33;
+        top: 2px;
+    }
+
+    div.item-row li > span label {
+        height: 100%;
+        font-size: 14px;
+        display: block;
+        /*float: right;*/
+    }
+
+    div.item-row li label.grade i.tik {
+        background: #212a33;
+    }
+
+    div.item-row li label.grade i {
+        width: 50px;
+        height: 8px;
+        margin: 0 0;
+        box-sizing: border-box;
+        display: block;
+        /*float: right;*/
+        border-radius: 0;
+    }
+
+    .item-row.w0 li > span {
+        width: 100%;
+    }
+
+    .bar-progress.item-row.w0 ul.history span {
+        position: relative;
+    }
+
+    div.item-row li > span label:first-child {
+        /*float: right;*/
+        color: #18252d;
+        background: none;
+        display: block;
+        border-radius: 2px;
+        padding: 0;
+        margin-left: 5px;
+    }
+
+    .item-row.w0 li > span {
+        height: auto;
+    }
+
+
+    .basic__birthday {
+        width: 100%;
+        /*float: right;*/
+    }
+
+    .basic__marital {
+        width: 100%;
+        /*float: right;*/
+    }
+
+    .basic__military {
+        width: 100%;
+        /*float: right;*/
+    }
+
+    .property-item_head {
+        border-bottom: none;
+    }
+
+    .property-item_head span i {
+        z-index: 10;
+        position: absolute;
+        color: #ffffff;
+        right: -10px;
+        top: 5px;
+        width: 25px;
+    }
+
+    .item-row.w4 ul.history li {
+        margin-bottom: 25px;
+    }
+
+    .bar-progress.item-row.w0 ul.history span:before {
+        content: '●';
+        width: 14px;
+        height: 25px;
+        color: #212a33;
+        /*float: right;*/
+        font-family: emoji;
+        font-weight: 800;
+        margin-top: 0;
+    }
+
+    small {
+        display: block;
+    }
+
+    .basic__birthday:after {
+        content: '';
+        position: absolute;
+        color: aqua;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .other-infos.not-drag {
+        display: block;
+        height: 50px;
+        /*float: right;*/
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+    }
+
+    .contact-info:after {
+        content: '';
+        height: 120px;
+        width: 104px;
+        background: #ffffff;
+        position: absolute;
+        top: 60px;
+        right: 74px;
+        z-index: 1;
+    }
+
+    ul.history h2.subtitle {
+        font-size: 14px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    ul.history h3.subtitle {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .property-item.social__list ul.history li span label:last-child {
+        font-size: 12px;
+    }
+
+    ul.history label.date {
+        font-size: 14px;
+        color: #5E5D5F;
+    }
+
+    label.exp-desc-title {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    ul.exp-desc li {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    h3.subtitle label {
+        font-size: 14px;
+    }
+
+    p.project-link {
+        font-size: 12px;
+    }
+
+    .about-us {
+        font-size: 12px;
+    }
+
+    ul.list-item li {
+        margin-bottom: 5px;
+    }
+
+    .ui-sortable-handle:hover .property-item_head label {
+        background: #eeeeee;
+    }
+
+    .ui-sortable-handle:hover .property-item_head::before {
+        background: #eeeeee;
+    }
+
+    .contact-info {
+        height: 170px;
+        position: relative;
+        background: #ffffff;
+    }
+
+    .contact-info:before {
+        background: #fff;
+        content: '';
+        height: 38px;
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        position: absolute;
+        top: auto;
+        border-radius: 0 115px 0 0;
+    }
+
+    ul.history p.description {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    ul.list-item li:last-child {
+        margin-bottom: 10px !important;
+    }
+
+    ul.list-item li p {
+        border-right: 0;
+    }
+
+    li.custom-list-item {
+        min-height: 10px !important;
+    }
+
+    .social__list ul.history li {
+        width: 100%;
+    }
+
+    .social__list div.item-row li > span label:first-child {
+        padding-right: 0 !important;
+    }
+
+    .property-item.language__list li {
+        width: 100%;
+    }
+
+    .language-presentation-descriptive h2.subtitle.language-item ~ span label:first-child,
+    .language-presentation-grades h2.subtitle.language-item ~ span label:first-child {
+        font-size: 14px;
+        /*float: right;*/
+        width: auto !important;
+    }
+
+    .language-presentation-descriptive h2.subtitle.language-item ~ span label:last-child,
+    .language-presentation-grades h2.subtitle.language-item ~ span label:last-child {
+        font-size: 14px;
+        float: left;
+        font-weight: bold;
+    }
+
+    li.language-presentation-stars.overall label {
+        display: block;
+    }
+
+    body.no-photo div.user-image {
+        visibility: hidden;
+        height: 0 !important;
+    }
+
+    body.no-photo .user-base {
+        width: 0;
+        border: 0;
+    }
+
+    body.no-photo .basic-contact-info {
+        width: 100%;
+        border-bottom: 1px solid;
+        height: 175px;
+    }
+
+    body.no-photo .contact-info:before {
+        border-radius: 0 !important;
+    }
+
+    body.no-photo .contact-info:after {
+        display: none;
+    }
+
+    body.no-photo .contact-detail {
+        width: 340px;
+    }
+
+
+</style>
 </body>
 
 </html>
