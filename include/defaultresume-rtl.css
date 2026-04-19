@@ -17,7 +17,7 @@ body {
 }
 
 div.user-image {
-    background-image: url('../src/img/profile.jpg');
+    background-image: url('../src/img/profile.png');
     display: inline-block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
