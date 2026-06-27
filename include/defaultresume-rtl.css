@@ -108,7 +108,8 @@ ul.history,
 ul.list-item {
     list-style-type: circle;
     padding-right: 0;
-    float: right;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 0 !important;
     width: 100%
 }
@@ -137,7 +138,7 @@ ul.history p.description {
 }
 
 ul.history li {
-    float: right;
+    display: block;
     list-style: none;
     box-sizing: border-box;
     padding-right: 0;
@@ -173,22 +174,21 @@ ul.list-item li p {
 }
 
 div.item-row li>span {
-    float: right;
+    display: flex;
+    align-items: center;
     padding-left: 10px;
     box-sizing: border-box;
     height: 24px;
     margin: 5px 0;
-    display: block
 }
 
 div.item-row li>span label {
     height: 100%;
-    display: block;
-    float: right
+    display: flex;
+    align-items: center;
 }
 
 div.item-row li>span label:first-child {
-    float: right;
     color: #fff;
     background: #575757;
     display: block;
@@ -239,8 +239,7 @@ div.item-row li label.grade i {
     margin: 7px 1px;
     background: #c7c7c7;
     box-sizing: border-box;
-    display: block;
-    float: right
+    display: inline-block;
 }
 
 div.item-row li label.grade i.tik {
@@ -280,7 +279,7 @@ ul.list-item li p.description {
 
 .contact-info_item div {
     width: 250px;
-    float: right;
+    display: inline-block;
     padding: 0;
     padding-right: 100px
 }
@@ -329,7 +328,7 @@ div.contact-item span:first-child {
 }
 
 .one-col-layout {
-    float: right;
+    display: block;
     width: 100%
 }
 
@@ -346,12 +345,11 @@ li.break-property-item {
 
 .circle-progress {
     display: none;
-    float: right;
     width: 100%
 }
 
 .circle-progress__item {
-    float: right;
+    display: block;
     width: 100%
 }
 
@@ -1617,7 +1615,7 @@ ul.exp-desc li {
 
 ul.exp-desc {
     padding-bottom: 5px;
-    float: right;
+    display: block;
     width: 90%;
     box-sizing: border-box;
     border-bottom: 1px dotted #808080
