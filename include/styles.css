@@ -827,7 +827,7 @@ ul.exp-desc li {
 /* ---- project cards ---- */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 5px 5px 0;
 }
