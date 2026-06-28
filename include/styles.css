@@ -955,3 +955,8 @@ ul.exp-desc li {
     background: #eaf3de;
     color: #3b6d11;
 }
+
+.project-tags-red span {
+  background: #fde8e8;
+  color: #b52020;
+}
