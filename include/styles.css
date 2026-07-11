@@ -237,7 +237,7 @@ ul.history.multi-line li {
     width: 100%;
 }
 
-label.exp-desc-title {
+.exp-desc-title {
     font-size: 13px;
     margin-bottom: 4px;
     display: block;
@@ -245,7 +245,7 @@ label.exp-desc-title {
     width: 90%;
 }
 
-ul.exp-desc li {
+.exp-desc li {
     font-size: 13px;
     margin-bottom: 0;
 }
@@ -278,7 +278,7 @@ ul.history p.description {
     font-size: 13px;
 }
 
-label.Education-Grade {
+.Education-Grade {
     display: block;
     font-size: 13px;
     color: #666;
@@ -484,8 +484,7 @@ ul.history label.date {
 }
 
 ul.history p.description {
-    margin: 0;
-    margin-top: 6px;
+    margin: -20px 0 0;
     text-align: justify;
 }
 
@@ -654,7 +653,7 @@ p.project-link a {
     word-break: break-word;
 }
 
-ul.exp-desc li {
+.exp-desc li {
     min-height: 0 !important;
     position: relative;
     padding-right: 12px;
@@ -663,7 +662,7 @@ ul.exp-desc li {
     margin: 5px 0;
 }
 
-ul.exp-desc {
+.exp-desc {
     padding-bottom: 5px;
     display: block;
     width: 90%;
@@ -671,7 +670,7 @@ ul.exp-desc {
     border-bottom: 1px dotted #808080
 }
 
-label.exp-desc-title {
+.exp-desc-title {
     display: block;
     padding: 0;
     /*border-bottom: 1px dotted #808080;*/
@@ -680,7 +679,7 @@ label.exp-desc-title {
     font-weight: bold;
 }
 
-ul.exp-desc li:before {
+.exp-desc li:before {
     content: '';
     position: absolute;
     width: 3px;
@@ -718,7 +717,7 @@ ul.history p.description {
     display: none !important;
 }
 
-ul.exp-desc li {
+.exp-desc li {
     text-align: justify
 }
 
@@ -971,4 +970,23 @@ ul.exp-desc li {
 }
 .flex{
     display: flex;
+}
+.border-bottom-none{
+    border-bottom: none;
+}
+@media print {
+    nav,
+    footer,
+    .btn,
+    .menu {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .container {
+        width: 100%;
+    }
 }
