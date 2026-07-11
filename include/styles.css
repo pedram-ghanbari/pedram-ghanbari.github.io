@@ -22,12 +22,12 @@ p{
 
 .container {
     box-shadow: 0 0 6px -2px #000;
-    margin: 50px auto;
+    margin: auto;
     min-height: 297mm;
     position: relative;
     font-family: IRANSans, serif;
     line-height: 21px;
-    width: 300mm;
+    width: 440mm;
     display: block;
     box-sizing: border-box;
     background: #ffffff;
@@ -965,4 +965,10 @@ ul.exp-desc li {
 .project-tags-red span {
   background: #fde8e8;
   color: #b52020;
+}
+.w-50{
+    width: 50%;
+}
+.flex{
+    display: flex;
 }
