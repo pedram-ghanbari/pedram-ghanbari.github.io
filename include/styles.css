@@ -408,7 +408,7 @@ body.no-photo .contact-detail {
 .download {
     width: 40px;
     height: 40px;
-    position: absolute;
+    margin:50px auto;
     left: 10px;
     bottom: 10px;
     cursor: pointer;
