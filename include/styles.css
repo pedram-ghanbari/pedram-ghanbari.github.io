@@ -137,8 +137,7 @@ p{
 } */
 .row
  {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
+    
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
@@ -149,6 +148,19 @@ p{
 .col {
     flex: 1 0 0;
     padding: 5px;
+    flex-grow:1;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+ 
+    max-width: 100%;
+}
+
+.col-12 {
+      flex: 0 0 100%;
+    max-width: 100%;
+    padding: 5px;
+  
 }
 
 .border-right{
