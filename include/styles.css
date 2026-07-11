@@ -18,6 +18,8 @@ ul {
 p{
     padding: 0;
     margin: 0;
+    font-size: 12px;
+    text-align: justify;
 }
 
 .container {
@@ -126,12 +128,35 @@ p{
 }
 
 /* ---- row / columns ---- */
-.row {
+/* .row {
     display: flex;
     flex-direction: row;
     width: 100%;
     background: #ffffff;
     box-sizing: border-box;
+} */
+.row
+ {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.col {
+    flex: 1 0 0;
+    padding: 5px;
+}
+
+.border-right{
+    border-right: 1px solid #e8e8e8;
+}
+
+.border-left{
+    border-left: 1px solid #e8e8e8;
 }
 
 .col-main {
@@ -228,6 +253,11 @@ ul.history p.description {
 .item-row.w0 li > span {
     width: 100%;
     height: auto;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
 }
 
 .bar-progress.item-row.w0 ul.history span {
