@@ -148,67 +148,6 @@ p{
     /*background: #fafafa;*/
 }
 
-/* ---- property-item head ---- */
-.property-item_head {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-}
-
-.property-item_head::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: #212a33;
-    z-index: 1;
-}
-
-.property-item_head label {
-    background: #fff;
-    padding: 0 15px;
-    position: relative;
-    z-index: 2;
-    right: 0;
-}
-
-.property-item_head span {
-    position: relative;
-    right: 50%;
-    z-index: 1;
-    font-size: 20px;
-    color: #212a33;
-    top: 2px;
-    display: inline;
-}
-
-.property-item_head span:after {
-    content: '';
-    position: absolute;
-    height: 35px;
-    width: 35px;
-    background: #212a33;
-    right: -15px;
-    top: -2px;
-    margin: 0;
-    border-radius: 5px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    z-index: 2;
-}
-
-.property-item_head span i {
-    z-index: 10;
-    position: absolute;
-    color: #ffffff;
-    right: -10px;
-    top: 5px;
-    width: 25px;
-}
-
 div.contact-item span:first-child {
     display: inline;
 }
@@ -434,7 +373,7 @@ body.no-photo .contact-detail {
 }
 
 div.user-image {
-    background-image: url('../src/img/profile.png');
+   
     display: inline-block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -452,6 +391,19 @@ div.user-image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.user-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 small {
@@ -600,9 +552,7 @@ h3.subtitle label {
     border-radius: 4px
 }
 
-.property-item_head span {
-    display: none
-}
+ 
 
 div.contact-item span:first-child {
     display: none
@@ -706,6 +656,10 @@ h2.subtitle.language-item label {
 .in-snapshot .container,
 .in-simple .container {
     min-height: 296mm;
+}
+
+.container p.about-us{
+    line-height: 1.2;
 }
 
 .container p.about-us,
@@ -989,4 +943,50 @@ ul.history p.description {
     .container {
         width: 100%;
     }
+
+     * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .about-card {
+        background: #f7f8fa !important;
+        border: 1px solid #e8e8e8 !important;
+    }
+}
+
+@media print {
+    .property-item_head::before {
+        content: "";
+        display: block !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 2px;
+        background: #212a33 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+.property-item_head {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+ 
+}
+
+.property-item_head hr {
+    flex: 1;
+    border: 0;
+    border-top: 2px solid #212a33;
+    margin: 0;
+}
+
+.property-item_head h3 {
+    font-size: 16px;
+    font-weight: 100;
+    white-space: nowrap;
+      margin: 0;
 }
