@@ -38,7 +38,7 @@
     z-index: 9;
     padding-right: 60px;
     display: none;
-    font-family: sdf;
+    font-family: IRANSans, serif;
     direction:rtl;
     text-indent:10px
 }
@@ -52,7 +52,7 @@
     .click-to-build-cv p {
         margin: 5px 0;
         font-size: 13px;
-        font-family: sdf !important;
+        font-family: IRANSans, serif;
     }
 
     .click-to-build-cv a {
@@ -104,7 +104,7 @@ a.view-template {
     line-height: 30px;
     font-size: 16px;
     font-weight: bold;
-    text-shadow: 0px 1px 1px #888;
+    text-shadow:0 1px 1px #888;
     cursor: pointer;
     width: 100%;
 }
@@ -148,7 +148,7 @@ a.view-template {
         background-color: #00967f;
         -webkit-box-shadow: 0 3px 0 0 #007261;
         box-shadow: 0 3px 0 0 #007261;
-        text-shadow: 0px 1px 1px #888;
+        text-shadow:0 1px 1px #888;
         float: right;
         border-radius: 0 6px 6px 0;
         -moz-border-radius: 0 6px 6px 0;
@@ -184,7 +184,6 @@ select.change-lang {
     font-size: 11px;
     margin: 11px 5px;
     font-family: inherit;
-    border: none;
     height: 34px;
     background: transparent;
     color: black;
